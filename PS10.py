@@ -1,3 +1,7 @@
+#write a python program having function rotatelist that takes list l and
+#a positive integerk and return the list k after k number of rotations.
+#if k is not positive, return list l unchanged.
+
 def rotatevalue(l):
     lastvalue=l[-1]
     for i in reversed(range(len(l)-1)):

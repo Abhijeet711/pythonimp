@@ -1,3 +1,5 @@
+#write a python program to check if the given string is well bracketed or not.
+
 q="y"
 while q.lower()=="y":
     def wellbracketed(str):

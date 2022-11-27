@@ -1,3 +1,5 @@
+#write a python program for transpose of matrix.
+
 q="y"
 while q.lower()=="y":
    rows=int(input("Enter no. rows: "))
