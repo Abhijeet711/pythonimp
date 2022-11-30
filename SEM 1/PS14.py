@@ -1,4 +1,4 @@
-#write a program that finds the largest file in the given dictonary.
+#write a program that finds the largest file in the given directory.
 
 import os
 q="y"
