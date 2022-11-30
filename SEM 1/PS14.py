@@ -1,13 +1,17 @@
 #write a program that finds the largest file in the given dictonary.
 
 import os
-import glob
-
-dir_name = ""
-
-list_of_files = filter(os.path.isfile, glob.glob(dir_name + "*"))
-
-max_file = max(list_of_files, key = lambda x: os.stat(x).st_size)
-
-print("Max Sized File: ", max_file)
-print("Max File size in bytes: ", os.stat(max_file).st_size)
+q="y"
+while q.lower()=="y":
+    str = input("Enter Your Path:")
+    name = ''
+    size = -1
+    file_lst = os.listdir(str)
+    for i in file_lst:
+        if os.path.isfile(i):
+            tmp_size = os.path.getsize(i)
+            if tmp_size > size:
+                size = tmp_size
+                name = i
+    print("Greatest File Is {} with File Size Is {}".format(name, size))
+    q=input("want to continue?(y/n):")
