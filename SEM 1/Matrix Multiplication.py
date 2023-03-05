@@ -1,10 +1,8 @@
-#write a program for matrix multiplication
-
 max=100
 def printMatrix(m, rowSize, colSize):
     for i in range(rowSize):
         for j in range(colSize):
-            print(m[i][j],end='')
+            print(m[i][j],end=' ')
         print()
 
 def multiplyMatrix(row1, col1, A, row2, col2, B):
@@ -40,7 +38,7 @@ if __name__=="__main__":
     print("enter the elements of second matrix: ")
     for i in range(row2):
         for j in range(col2):
-            B[i][j] = int(input("B["+str(i)+"][0"+str(j)+"]: "))
+            B[i][j] = int(input("B["+str(i)+"]["+str(j)+"]: "))
     
     print("First Matrix")
     printMatrix(A,row1,col1)
@@ -48,4 +46,4 @@ if __name__=="__main__":
     print("Second Matrix")
     printMatrix(B,row2,col2)
 
-    multiplyMatrix(row1,col1,A,row2,col2,B)
+    multiplyMatrix(row1, col1, A, row2, col2, B)

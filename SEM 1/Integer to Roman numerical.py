@@ -1,0 +1,15 @@
+q='y'
+while q.lower()=='y':
+    n=int(input("Enter a number: "))
+    num=(1000,900,500,400,100,90,50,40,10,9,5,4,1)
+    rom=('M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I')
+
+    result = ''
+
+    for i in range(len(num)):
+        count = int(n/num[i])
+        result += str(rom[i]*count)
+        n -= num[i]*count
+
+    print(result)
+    q=input("do you want to continue(y/n)?:")
